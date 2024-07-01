@@ -1,5 +1,5 @@
 "use client"
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import EmbedsContainer from './embeds';
@@ -52,7 +52,7 @@ export default function CustomEditor({ wordCount, setWordCount, firstParagraphHe
     }
 
   };
-
+  
 
   return (
     <section className='relative'>
@@ -61,7 +61,7 @@ export default function CustomEditor({ wordCount, setWordCount, firstParagraphHe
         theme="snow"
         modules={modules}
         value={value}
-        onChange={(param: any) => {handleChange}}
+        onChange={handleChange}
 
         className='h-[70vh] border-b-0 overflow-y-scroll'
       />

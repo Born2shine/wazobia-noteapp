@@ -6,7 +6,6 @@ import { useRef, useState } from 'react';
 export default function Home() {
   const [wordCount, setWordCount] = useState<number>(0)
   const [firstParagraphHeight, setFirstParagraphHeight] = useState<number | null>(null);
-  const iconRef = useRef(null)
 
   return (
     <main className="min-h-screen p-5 bg-[#FAFAFA]">
