@@ -1,8 +1,6 @@
 "use client"
 
 import CustomEditor from '@/components/editor';
-import EmbedsContainer from '@/components/embeds';
-import { LucidePlus } from 'lucide-react';
 import { useRef, useState } from 'react';
 
 export default function Home() {
